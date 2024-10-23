@@ -1,10 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  overflow: overlay;
   background-color: #f0f0f0;
 }
 li {
@@ -22,6 +22,7 @@ header {
   height: 60px;
   width: 100vw; /* 100% of the viewport width */
   padding: 10px 0; /* Padding at the top and bottom only */
+  overflow: overlay;
   z-index: 1000;
 }
 .left-section {
@@ -54,19 +55,26 @@ nav a {
 .right-section button {
   padding: 5px 10px;
   font-size: 14px;
-  background-color: #007bff;
-  color: white;
+  color: #f4f4f4;
+  background-color: #0d7ded;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 button:hover {
-  background-color: #01b198;
+  background-color: #f8f9fa;
+  border: solid 2px #01b198;
+  border-radius: 5px;
+  color: #01b198;
+  transition: 0.5s;
+  cursor: pointer;
 }
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   margin-top: 50px;
+  background: gray;
+  text-align: justify;
 }
 .container {
   display: flex;
@@ -90,4 +98,7 @@ footer {
   width: 500px;
 }
 .image-placeholder {
+  padding-left: 50px;
+  justify-content: center;
+  
 }
