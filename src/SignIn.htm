@@ -3,10 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css" />
     <link rel="stylesheet" type="text/css" href="CSS/form_styles.css" />
     <title>Sign In-RecycleBulungi</title>
   </head>
   <body>
+    <header>
+      <div class="left-header">
+        <div class="logo">
+          <img src="images/recycling-icon.svg" width="25" />
+        </div>
+        <div class="site-name">RecycleBulungi</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="about.htm" target="_self">About</a></li>
+          <li><a href="services.htm" target="_self">Services</a></li>
+          <li><a href="contact.htm" target="_self">Contact</a></li>
+          <li><a href="edu.htm" target="_self">Education</a></li>
+        </ul>
+      </nav>
+      <div class="right-header">
+        <a href="SignUp.htm"><button>Sign Up</button></a>
+        <a href="SignIn.htm"><button>Sign In</button></a>
+      </div>
+    </header>
+
     <div class="wrapper">
       <div class="content">
         <h2></h2>
@@ -31,8 +53,41 @@
           />
           <input type="submit" value="Sign In" />
         </form>
+        <!--make sure to redirect to email to account-->
+        <div class="new_acc">Don't have an account? <a href="">sign up</a></div>
+        <div class="forgot_password">
+          Forgot password? <a href="src/SignUp.htm">click here</a>
+        </div>
       </div>
     </div>
-    <footer>All rights reserved &copy 2024 RecycleBulungi</footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Contact Us</h3>
+          <p>Email: <a href="mailto:info@company.com">info@company.com</a></p>
+          <p>Phone: +256 784 356 572</p>
+        </div>
+        <div class="footer-right">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/company" target="_blank">
+              <img src="images/facebook-icon.svg" alt="Facebook" width="35" />
+            </a>
+            <a href="https://www.twitter.com/company" target="_blank">
+              <img src="images/twitter-icon.svg" alt="Twitter" width="35" />
+            </a>
+            <a href="https://www.linkedin.com/company" target="_blank">
+              <img src="images/linkedin2-icon.svg" alt="LinkedIn" width="40" />
+            </a>
+            <a href="https://www.instagram.com/company" target="_blank">
+              <img src="images/instagram-icon.svg" alt="Instagram" width="35" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
