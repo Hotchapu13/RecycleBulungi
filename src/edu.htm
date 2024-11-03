@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css" />
     <link rel="stylesheet" type="text/css" href="Edu.css" />
+    <script src="JavaScript/generalScript.js"></script>
     <title>Education-RecycleBulungi</title>
   </head>
   <body>
     <header>
       <div class="left-header">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <img src="images/menu-icon.svg" width="25" alt="Menu Icon" />
+        </div>
         <div class="logo">
           <img src="images/recycling-icon.svg" width="25" />
         </div>
@@ -28,6 +32,23 @@
         <a href="SignIn.htm"><button>Sign In</button></a>
       </div>
     </header>
+    <div class="side-menu" id="sideMenu">
+      <div class="profile">
+        <img
+          src="images/user-icon.png"
+          alt="User Profile"
+          class="profile-icon"
+        />
+        <p class="username">Username</p>
+      </div>
+      <ul class="menu-items">
+        <li><a href="edit_profile.htm">Edit Profile</a></li>
+        <li><a href="dashboard.htm">Dashboard</a></li>
+        <li><a href="settings.htm">Settings</a></li>
+        <li><a href="about_us.htm">About Us</a></li>
+        <li><a href="logout.htm">Logout</a></li>
+      </ul>
+    </div>
     <div class="wrapper">
       <div class="education-page">
         <h2>Recycling Education</h2>
