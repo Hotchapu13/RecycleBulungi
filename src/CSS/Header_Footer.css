@@ -2,6 +2,7 @@
 header {
   position: fixed;
   top: 0;
+  left: 0;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
@@ -11,9 +12,9 @@ header {
   height: 60px;
   width: 100vw; /* 100% of the viewport width */
   padding: 10px 0; /* Padding at the top and bottom only */
-  overflow: overlay;
+  overflow: auto;
   z-index: 1000;
-  transition: top 0.3s;
+  transition: top 0.3s, padding 0.3s;
 }
 footer {
   position: relative;
@@ -28,7 +29,7 @@ footer {
   z-index: 998;
   padding: 20px;
 }
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,19 +39,19 @@ footer {
   padding: 0 20px;
 }
 
-.footer-left{
+.footer-left {
   padding-left: 40px;
   display: grid;
   gap: 10px;
-  align-items:baseline
+  align-items: baseline;
 }
-.footer-right{
+.footer-right {
   padding-right: 40px;
   display: grid;
   gap: 10px;
   align-items: center;
 }
-.social_icons{
+.social_icons {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -165,4 +166,3 @@ nav a {
 .menu-items a:hover {
   color: #007bff;
 }
-

@@ -5,7 +5,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: overlay;
+  overflow: auto;
+  overflow-x: hidden;
   background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
@@ -74,16 +75,26 @@ body {
   border-radius: 8px;
   width: 350px;
   margin: auto;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
-.buy_sell{
+.buy_sell {
   padding-right: 20px;
-  background-color: #C9FAB2;
+  background-color: #c9fab2;
 }
-.section2{
+.section2 {
   padding-left: 20px;
-  background-color: #C9FAB2;
+  background-color: #c9fab2;
 }
 
 .section h2 {
   margin-bottom: 10px;
+}
+
+.buy_sell:hover,
+.section2:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Slightly enlarge the div */
+  background-color: #d4f1c5; /* Brighter shade of green */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
