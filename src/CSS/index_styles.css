@@ -5,7 +5,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: overlay;
+  overflow: auto;
+  overflow-x:hidden;
   background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
