@@ -7,6 +7,20 @@
     <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css" />
     <script src="JS/generalScript.js"></script>
     <title>services-RecycleBulungi</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const services = document.querySelectorAll(".service");
+
+        services.forEach((service) => {
+          service.addEventListener("click", function () {
+            const targetUrl = service.getAttribute("data-url");
+            if (targetUrl) {
+              window.location.href = targetUrl;
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -56,24 +70,25 @@
       <div class="intro">
         <h1>Welcome to RecycleBulungi</h1>
         <p>
-          Your one-stop solution for recycling, education, and sustainable living.
+          Your one-stop solution for recycling, education, and sustainable
+          living.
         </p>
       </div>
 
-      <section id="services">
-        <div class="service">
+      <div id="services">
+        <div class="service" data-url="marketplace.htm">
           <h2>Marketplace</h2>
-          <p>Buy, sell, or exchange recyclable materials.</p>
+          <p>Buy, sell or exchange recyclable materials.</p>
         </div>
-        <div class="service">
+        <div class="service" data-url="edu.htm">
           <h2>Recycling Education</h2>
           <p>Learn how to recycle effectively and reduce waste.</p>
         </div>
-        <div class="service">
+        <div class="service" data-url="src/RecyclingCenters.htm">
           <h2>Recycling Centers</h2>
           <p>Find a recycling center near you.</p>
         </div>
-      </section>
+      </div>
     </div>
 
     <footer class="footer">
