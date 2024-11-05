@@ -4,8 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/RecyclingCenters.css" />
     <script src="JS/generalScript.js"></script>
     <title>RecyclingCenters</title>
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-sA+e2GGWNTNgMIK5zPZjgBTyrPJv3dqOmk7G1Rh6WGE="
+      crossorigin=""
+    />
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-o9N1j7l5kxdZkULmyiweinywQ4xIbnowowj76u9v+0M="
+      crossorigin=""
+      defer
+    ></script>
+
+    <!-- Leaflet Control Geocoder (Optional for Autocomplete) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+    />
+    <script
+      src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"
+      defer
+    ></script>
+
+    <!-- Initialize Leaflet Map -->
+    <script src="JS/RecyclingCenters.js" defer></script>
   </head>
   <body>
     <header>
@@ -48,6 +78,31 @@
         <li><a href="logout.htm">Logout</a></li>
       </ul>
     </div>
+
+    <div class="wrapper">
+      <div class="recycling-centers-page">
+        <h2>Find Recycling Centers</h2>
+        <p>
+          Locate recycling centers near you using the map or search for a
+          specific area.
+        </p>
+
+        <!-- Search Field -->
+        <input
+          id="search-input"
+          class="search-input"
+          type="text"
+          placeholder="Search for recycling centers..."
+        />
+
+        <!-- Google Places Autocomplete (Optional) -->
+        <!-- Leaflet Control Geocoder will handle this -->
+
+        <!-- OpenStreetMap Container -->
+        <div id="map"></div>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-left">

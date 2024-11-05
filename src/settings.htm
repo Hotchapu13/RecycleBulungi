@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Settings.css" />
     <script src="JS/generalScript.js"></script>
     <title>Settings-RecycleBulungi</title>
   </head>
@@ -48,18 +49,21 @@
         <li><a href="logout.htm">Logout</a></li>
       </ul>
     </div>
-    <div class="settings-page">
-      <h2>Account Settings</h2>
-      <form action="update-settings" method="POST">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" value="[User's email]" />
-
-        <label for="password">Change Password</label>
-        <input type="password" id="password" name="password" />
-
-        <button type="submit">Save Settings</button>
-      </form>
+    <div class="wrapper">
+      <div class="settings-page">
+        <h2>Account Settings</h2>
+        <form action="update-settings" method="POST">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" value="[User's email]" />
+  
+          <label for="password">Change Password</label>
+          <input type="password" id="password" name="password" />
+  
+          <button type="submit">Save Settings</button>
+        </form>
+      </div>
     </div>
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-left">
