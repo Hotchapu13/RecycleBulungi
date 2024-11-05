@@ -11,28 +11,73 @@ document.addEventListener("DOMContentLoaded", function () {
     maxZoom: 19,
   }).addTo(map);
 
+  // Define custom icon
+  const customIcon = L.icon({
+    iconUrl: "images/push-pin-green-icon.svg", // Path to your custom icon
+    iconSize: [38, 38], // Size of the icon [width, height]
+    iconAnchor: [19, 38], // Point of the icon that will correspond to the marker's location
+    popupAnchor: [0, -38], // Point where the popup should open relative to the iconAnchor
+  });
+
   // Initialize a layer group for recycling centers
   const recyclingCentersLayer = L.layerGroup().addTo(map);
 
   // Sample Recycling Centers Data
   const recyclingCenters = [
     {
-      name: "Green Earth Recycling",
-      lat: 1.3733,
-      lng: 32.2903,
-      address: "123 Green St, Kampala",
+      name: "Ntare Garbage collection Centre",
+      lat: -0.5953109605801258,
+      lng: 30.650525064191307,
+      address: "9JWX+QQQ, Mbarara",
     },
     {
-      name: "Eco Recycling Center",
-      lat: 0.3476,
-      lng: 32.5825,
-      address: "456 Eco Ave, Entebbe",
+      name: "Kamukuzi Garbage Collection Center",
+      lat: -0.5977140895657123,
+      lng: 30.642628641072783,
+      address: "9JVV+HV9, Road, Mbarara",
     },
     {
-      name: "Sustainable Recycle Hub",
-      lat: 0.3131,
-      lng: 32.5811,
-      address: "789 Sustain Blvd, Jinja",
+      name: "Boma Garbage Collection Center",
+      lat: -0.608356505232715,
+      lng: 30.650525064191307,
+      address: "9JMX+RP6, Mbarara",
+    },
+    {
+      name: "BSU Garbage Collection Center",
+      lat: -0.6007287122896015,
+      lng: 30.695468206931388,
+      address: "9MWW+Q7X, University Rd, Mbarara",
+    },
+    {
+      name: "MUST Garbage Collection Center",
+      lat: -0.6151957440981288,
+      lng: 30.65509023761746,
+      address: "9MM4+24R, Mbarara",
+    },
+    {
+      name: "Boma Garbage Collection Center",
+      lat: -0.608356505232715,
+      lng: 30.650525064191307,
+      address: "9JMX+RP6, Mbarara",
+    },
+    {
+      name: "ECO Brixs",
+      lat: -0.3237828501329017,
+      lng: 31.73133993660707,
+      address: "MPFJ+FJR, Masaka-Mbarara By-pass Rd, Masaka",
+    },
+    {
+      name: "Uganda Plastics Manufacturers And Recyclers Association",
+      lat: 0.3194663398183941,
+      lng: 32.58439303764817,
+      address: "Agip House, 28, Jinja Road, Kampala",
+    },
+    {
+      name: "KCCA Waste Recycling Center",
+      lat: 0.3052164415259067,
+      lng: 32.65215376431483,
+      address:
+        "near National Water and Hisense Wankoko, off of Port Bell Rd, Kampala",
     },
     // Add more centers as needed
   ];
@@ -43,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     centers.forEach((center) => {
       const marker = L.marker([center.lat, center.lng], {
-        title: center.name,
+        icon: customIcon,
       }).addTo(recyclingCentersLayer);
 
       // Bind popup to marker
@@ -55,29 +100,29 @@ document.addEventListener("DOMContentLoaded", function () {
   addMarkers(recyclingCenters);
 
   // Initialize Leaflet Control Geocoder (Search Box with Autocomplete)
-  if (L.Control.Geocoder) {
-    const geocoder = L.Control.Geocoder.nominatim();
+  // if (L.Control.Geocoder) {
+  //   const geocoder = L.Control.Geocoder.nominatim();
 
-    L.Control.geocoder({
-      query: "",
-      placeholder: "Search for recycling centers...",
-      geocoder: geocoder,
-      defaultMarkGeocode: false,
-    })
-      .on("markgeocode", function (e) {
-        const bbox = e.geocode.bbox;
-        const poly = L.polygon([
-          bbox.getSouthEast(),
-          bbox.getNorthEast(),
-          bbox.getNorthWest(),
-          bbox.getSouthWest(),
-        ]);
-        map.fitBounds(poly.getBounds());
-      })
-      .addTo(map);
-  } else {
-    console.error("Leaflet Control Geocoder plugin is not loaded.");
-  }
+  //   L.Control.geocoder({
+  //     query: "",
+  //     placeholder: "Search for recycling centers...",
+  //     geocoder: geocoder,
+  //     defaultMarkGeocode: false,
+  //   })
+  //     .on("markgeocode", function (e) {
+  //       const bbox = e.geocode.bbox;
+  //       const poly = L.polygon([
+  //         bbox.getSouthEast(),
+  //         bbox.getNorthEast(),
+  //         bbox.getNorthWest(),
+  //         bbox.getSouthWest(),
+  //       ]);
+  //       map.fitBounds(poly.getBounds());
+  //     })
+  //     .addTo(map);
+  // } else {
+  //   console.error("Leaflet Control Geocoder plugin is not loaded.");
+  // }
 
   // Search Functionality
   const searchInput = document.getElementById("search-input");
