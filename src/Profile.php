@@ -13,6 +13,7 @@
       background-color: #f8f9fa;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
     .container {
       display: flex;
@@ -74,42 +75,8 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="left-header">
-      <div class="menu-icon" onclick="toggleMenu()">
-        <img src="images/menu-icon.svg" width="25" alt="Menu Icon">
-      </div>
-      <div class="logo">
-        <img src="images/recycling-icon.svg" width="25" alt="Recycling Logo">
-      </div>
-      <div class="site-name">RecycleBulungi</div>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="about.php" target="_self">About</a></li>
-        <li><a href="services.php" target="_self">Services</a></li>
-        <li><a href="contact.php" target="_self">Contact</a></li>
-        <li><a href="edu.php" target="_self">Education</a></li>
-      </ul>
-    </nav>
-    <div class="right-header">
-      <a href="SignUp.php"><button>Sign Up</button></a>
-      <a href="SignIn.php"><button>Sign In</button></a>
-    </div>
-  </header>
-  <div class="side-menu" id="sideMenu">
-    <div class="profile">
-      <img src="images/user-icon.svg" alt="User Profile" class="profile-icon">
-      <p class="username">Username</p>
-    </div>
-    <ul class="menu-items">
-      <li><a href="edit_profile.php">Edit Profile</a></li>
-      <li><a href="dashboard.php">Dashboard</a></li>
-      <li><a href="settings.php">Settings</a></li>
-      <li><a href="about_us.php">About Us</a></li>
-      <li><a href="logout.php">Logout</a></li>
-    </ul>
-  </div>
+  <?php include "header.php"; ?> 
+
   <div class="container">
     <div class="profile-card">
       <img src="images/user-icon.svg" alt="User Profile">
@@ -124,19 +91,9 @@
       </form>
     </div>
   </div>
-
+  
+  <?php include "footer.php"; ?>
   <script>
-    function toggleMenu() {
-      const sideMenu = document.getElementById("sideMenu");
-      sideMenu.classList.toggle("active");
-    }
-    document.addEventListener("click", function (event) {
-      const sideMenu = document.getElementById("sideMenu");
-      const menuIcon = document.querySelector(".menu-icon");
-      if (!sideMenu.contains(event.target) && !menuIcon.contains(event.target)) {
-        sideMenu.classList.remove("active");
-      }
-    });
     document.getElementById('profileForm').addEventListener('submit', function(event) {
       event.preventDefault();
       alert('Profile updated successfully!');
