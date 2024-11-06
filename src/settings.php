@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Settings.css" />
     <script src="JS/generalScript.js"></script>
-    <title>Contact-RecycleBulungi</title>
+    <title>Settings-RecycleBulungi</title>
   </head>
   <body>
     <header>
@@ -31,12 +32,39 @@
         <a href="SignIn.htm"><button>Sign In</button></a>
       </div>
     </header>
+    <div class="side-menu" id="sideMenu">
+      <div class="profile">
+        <img
+          src="images/user-icon.png"
+          alt="User Profile"
+          class="profile-icon"
+        />
+        <p class="username">Username</p>
+      </div>
+      <ul class="menu-items">
+        <li><a href="edit_profile.htm">Edit Profile</a></li>
+        <li><a href="dashboard.htm">Dashboard</a></li>
+        <li><a href="settings.htm">Settings</a></li>
+        <li><a href="about_us.htm">About Us</a></li>
+        <li><a href="logout.htm">Logout</a></li>
+      </ul>
+    </div>
+    
     <div class="wrapper">
-      <div>
-        For any inquiries please email
-        <a href="nyeroryan@gmail.com">info@RecycleBulungi.com</a>
+      <div class="settings-page">
+        <h2>Account Settings</h2>
+        <form action="update-settings" method="POST">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" value="[User's email]" />
+  
+          <label for="password">Change Password</label>
+          <input type="password" id="password" name="password" />
+  
+          <button type="submit">Save Settings</button>
+        </form>
       </div>
     </div>
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-left">

@@ -56,6 +56,17 @@
         height: 30px;
         margin-right: 5px;
       }
+      @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer-left,
+        .footer-right {
+          padding: 0;
+          text-align: center;
+        }
+      }
     </style>
   </head>
   <body>
@@ -67,7 +78,7 @@
             Email:
             <a href="mailto:info@RecycleBulungi.com">info@RecycleBulungi.com</a>
           </p>
-          <p>Phone: +256 784 356 572</p>
+          <p>Phone: <a href="tel:+256784356572">+256 784 356 572</a></p>
         </div>
         <div class="footer-right">
           <h3>Follow Us</h3>
