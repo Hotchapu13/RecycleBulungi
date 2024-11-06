@@ -6,10 +6,157 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
+  overflow-x: hidden;
   background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
 }
 .wrapper {
   margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Adjust the value as needed */
+}
+.wrapper > div {
+  margin-bottom: 20px; /* Add margin to child divs */
+}
+.wrapper > div:last-child {
+  margin-bottom: 0; /* Remove margin from the last child */
+}
+.education-page {
+  padding: 20px;
+}
+.education-page h2 {
+  color: #01b198;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.education-page p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* Articles Section */
+.articles {
+  margin-bottom: 40px;
+}
+.articles h3 {
+  color: #01b198;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.article {
+  background-color: #e2f0d9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+  background-color: #c3e0b2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.article h4 a {
+  color: #01b198;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.article h4 a:hover {
+  color: #014d40;
+}
+
+.article p {
+  font-size: 16px;
+  color: #333;
+}
+/* Videos Section */
+.videos {
+  margin-bottom: 40px;
+}
+
+.videos h3 {
+  color: #01b198;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.video {
+  background-color: #e2f0d9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video:hover {
+  background-color: #c3e0b2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #014d40;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .education-page h2 {
+    font-size: 24px;
+  }
+
+  .education-page p {
+    font-size: 16px;
+  }
+
+  .article,
+  .video {
+    padding: 15px;
+  }
+
+  .video-container {
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .education-page h2 {
+    font-size: 20px;
+  }
+
+  .education-page p {
+    font-size: 14px;
+  }
+
+  .article,
+  .video {
+    padding: 10px;
+  }
+
+  .video-container {
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+  }
 }

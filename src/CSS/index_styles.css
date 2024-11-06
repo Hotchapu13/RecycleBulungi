@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
-  overflow-x:hidden;
+  overflow-x: hidden;
   background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
@@ -37,4 +37,36 @@ body {
 .image-placeholder {
   padding-left: 50px;
   justify-content: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container,
+  .container_2 {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .content_1,
+  .content_2 {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .image-placeholder {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content_1,
+  .content_2 {
+    font-size: 16px;
+    padding: 15px;
+  }
 }

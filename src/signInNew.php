@@ -139,18 +139,18 @@
     <div class="side-menu" id="sideMenu">
       <div class="profile">
         <img
-          src="images/user-icon.png"
+          src="images/user-icon.svg"
           alt="User Profile"
           class="profile-icon"
         />
         <p class="username">Username</p>
       </div>
       <ul class="menu-items">
-        <li><a href="edit_profile.htm">Edit Profile</a></li>
-        <li><a href="dashboard.htm">Dashboard</a></li>
-        <li><a href="settings.htm">Settings</a></li>
-        <li><a href="about_us.htm">About Us</a></li>
-        <li><a href="logout.htm">Logout</a></li>
+        <li><a href="edit_profile.php">Edit Profile</a></li>
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <li><a href="settings.php">Settings</a></li>
+        <li><a href="about_us.php">About Us</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
     <div class="card">

@@ -3,51 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css" />
-    <script src="JS/generalScript.js"></script>
-    <title>RecyclingCenters</title>
+    <title>Footer</title>
+    <style>
+      footer {
+        position: relative;
+        bottom: 0;
+        margin-top: 50px;
+        background: #21b5a8;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 998;
+        padding: 20px;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .footer-left, .footer-right{
+        padding-left: 40px;
+        display: grid;
+        gap: 10px;
+        align-items: center;
+      }
+      .social_icons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+      .social-icons a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        
+      }
+      .social-icons img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+      }
+      @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer-left,
+        .footer-right {
+          padding: 0;
+          text-align: center;
+        }
+        .social-icons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="left-header">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <img src="images/menu-icon.svg" width="25" alt="Menu Icon" />
-        </div>
-        <div class="logo">
-          <img src="images/recycling-icon.svg" width="25" />
-        </div>
-        <div class="site-name">RecycleBulungi</div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="about.htm" target="_self">About</a></li>
-          <li><a href="services.htm" target="_self">Services</a></li>
-          <li><a href="contact.htm" target="_self">Contact</a></li>
-          <li><a href="edu.htm" target="_self">Education</a></li>
-        </ul>
-      </nav>
-      <div class="right-header">
-        <a href="SignUp.htm"><button>Sign Up</button></a>
-        <a href="SignIn.htm"><button>Sign In</button></a>
-      </div>
-    </header>
-    <div class="side-menu" id="sideMenu">
-      <div class="profile">
-        <img
-          src="images/user-icon.png"
-          alt="User Profile"
-          class="profile-icon"
-        />
-        <p class="username">Username</p>
-      </div>
-      <ul class="menu-items">
-        <li><a href="edit_profile.htm">Edit Profile</a></li>
-        <li><a href="dashboard.htm">Dashboard</a></li>
-        <li><a href="settings.htm">Settings</a></li>
-        <li><a href="about_us.htm">About Us</a></li>
-        <li><a href="logout.htm">Logout</a></li>
-      </ul>
-    </div>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-left">
@@ -56,7 +78,7 @@
             Email:
             <a href="mailto:info@RecycleBulungi.com">info@RecycleBulungi.com</a>
           </p>
-          <p>Phone: +256 784 356 572</p>
+          <p>Phone: <a href="tel:+256784356572">+256 784 356 572</a></p>
         </div>
         <div class="footer-right">
           <h3>Follow Us</h3>
