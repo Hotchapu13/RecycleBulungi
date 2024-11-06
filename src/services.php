@@ -35,33 +35,33 @@
       </div>
       <nav>
         <ul>
-          <li><a href="about.htm" target="_self">About</a></li>
-          <li><a href="services.htm" target="_self">Services</a></li>
-          <li><a href="contact.htm" target="_self">Contact</a></li>
-          <li><a href="edu.htm" target="_self">Education</a></li>
+          <li><a href="about.php" target="_self">About</a></li>
+          <li><a href="services.php" target="_self">Services</a></li>
+          <li><a href="contact.php" target="_self">Contact</a></li>
+          <li><a href="edu.php" target="_self">Education</a></li>
         </ul>
       </nav>
       <div class="right-header">
-        <a href="SignUp.htm"><button>Sign Up</button></a>
-        <a href="SignIn.htm"><button>Sign In</button></a>
+        <a href="SignUp.php"><button>Sign Up</button></a>
+        <a href="SignIn.php"><button>Sign In</button></a>
       </div>
     </header>
 
     <div class="side-menu" id="sideMenu">
       <div class="profile">
         <img
-          src="images/user-icon.png"
+          src="images/user-icon.svg"
           alt="User Profile"
           class="profile-icon"
         />
         <p class="username">Username</p>
       </div>
       <ul class="menu-items">
-        <li><a href="edit_profile.htm">Edit Profile</a></li>
-        <li><a href="dashboard.htm">Dashboard</a></li>
-        <li><a href="settings.htm">Settings</a></li>
-        <li><a href="about_us.htm">About Us</a></li>
-        <li><a href="logout.htm">Logout</a></li>
+        <li><a href="edit_profile.php">Edit Profile</a></li>
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <li><a href="settings.php">Settings</a></li>
+        <li><a href="about_us.php">About Us</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
 
@@ -76,15 +76,15 @@
       </div>
 
       <div id="services">
-        <div class="service" data-url="marketplace.htm">
+        <div class="service" data-url="marketplace.php">
           <h2>Marketplace</h2>
           <p>Buy, sell or exchange recyclable materials.</p>
         </div>
-        <div class="service" data-url="edu.htm">
+        <div class="service" data-url="edu.php">
           <h2>Recycling Education</h2>
           <p>Learn how to recycle effectively and reduce waste.</p>
         </div>
-        <div class="service" data-url="RecyclingCenters.htm">
+        <div class="service" data-url="RecyclingCenters.php">
           <h2>Recycling Centers</h2>
           <p>Find a recycling center near you.</p>
         </div>

@@ -86,33 +86,33 @@
     </div>
     <nav>
       <ul>
-        <li><a href="about.htm" target="_self">About</a></li>
-        <li><a href="services.htm" target="_self">Services</a></li>
-        <li><a href="contact.htm" target="_self">Contact</a></li>
-        <li><a href="edu.htm" target="_self">Education</a></li>
+        <li><a href="about.php" target="_self">About</a></li>
+        <li><a href="services.php" target="_self">Services</a></li>
+        <li><a href="contact.php" target="_self">Contact</a></li>
+        <li><a href="edu.php" target="_self">Education</a></li>
       </ul>
     </nav>
     <div class="right-header">
-      <a href="SignUp.htm"><button>Sign Up</button></a>
-      <a href="SignIn.htm"><button>Sign In</button></a>
+      <a href="SignUp.php"><button>Sign Up</button></a>
+      <a href="SignIn.php"><button>Sign In</button></a>
     </div>
   </header>
   <div class="side-menu" id="sideMenu">
     <div class="profile">
-      <img src="images/user-icon.png" alt="User Profile" class="profile-icon">
+      <img src="images/user-icon.svg" alt="User Profile" class="profile-icon">
       <p class="username">Username</p>
     </div>
     <ul class="menu-items">
-      <li><a href="edit_profile.htm">Edit Profile</a></li>
-      <li><a href="dashboard.htm">Dashboard</a></li>
-      <li><a href="settings.htm">Settings</a></li>
-      <li><a href="about_us.htm">About Us</a></li>
-      <li><a href="logout.htm">Logout</a></li>
+      <li><a href="edit_profile.php">Edit Profile</a></li>
+      <li><a href="dashboard.php">Dashboard</a></li>
+      <li><a href="settings.php">Settings</a></li>
+      <li><a href="about_us.php">About Us</a></li>
+      <li><a href="logout.php">Logout</a></li>
     </ul>
   </div>
   <div class="container">
     <div class="profile-card">
-      <img src="images/user-icon.png" alt="User Profile">
+      <img src="images/user-icon.svg" alt="User Profile">
       <h2>John Doe</h2>
       <p>Email: john.doe@example.com</p>
       <p>Phone: +256 784 356 572</p>

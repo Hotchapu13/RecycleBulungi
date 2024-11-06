@@ -21,29 +21,29 @@
           </div>
           <nav>
             <ul>
-              <li><a href="about.htm" target="_self">About</a></li>
-              <li><a href="services.htm" target="_self">Services</a></li>
-              <li><a href="contact.htm" target="_self">Contact</a></li>
-              <li><a href="edu.htm" target="_self">Education</a></li>
+              <li><a href="about.php" target="_self">About</a></li>
+              <li><a href="services.php" target="_self">Services</a></li>
+              <li><a href="contact.php" target="_self">Contact</a></li>
+              <li><a href="edu.php" target="_self">Education</a></li>
             </ul>
           </nav>
           <div class="right-header">
-            <a href="SignUp.htm"><button>Sign Up</button></a>
-            <a href="SignIn.htm"><button>Sign In</button></a>
+            <a href="SignUp.php"><button>Sign Up</button></a>
+            <a href="SignIn.php"><button>Sign In</button></a>
           </div>
         </header>
 
         <div class="side-menu" id="sideMenu">
           <div class="profile">
-            <img src="images/user-icon.png" alt="User Profile" class="profile-icon">
+            <img src="images/user-icon.svg" alt="User Profile" class="profile-icon">
             <p class="username">Username</p>
           </div>
           <ul class="menu-items">
-            <li><a href="edit_profile.htm">Edit Profile</a></li>
-            <li><a href="dashboard.htm">Dashboard</a></li>
-            <li><a href="settings.htm">Settings</a></li>
-            <li><a href="about_us.htm">About Us</a></li>
-            <li><a href="logout.htm">Logout</a></li>
+            <li><a href="edit_profile.php">Edit Profile</a></li>
+            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="settings.php">Settings</a></li>
+            <li><a href="about_us.php">About Us</a></li>
+            <li><a href="logout.php">Logout</a></li>
           </ul>
         </div>
 
@@ -54,13 +54,13 @@
 
             </div>
             <div class="buy_sell">
-              <img src="images/Money-exchanging-hands-photo-by-Matyas-Boyen.jpg" alt="items that can be exchanged" width=" "/>
+              <img src="images/Money.svg" alt="items that can be exchanged" width=" "/>
                 <h2>Buy/Sell</h2>
                 <p>Transform your waste into money! Our platform connects you with buyers eager to purchase your sorted recyclables. Sell plastics, metals, paper, and electronics while supporting environmental sustainability. Every kilogram matters—start earning from your recyclables today!</p>
             </div>
 
             <div class="section2">
-              <img src="images/exchange.jpg" alt="items that can be exchanged" width=""/>
+              <img src="images/exchange.svg" alt="items that can be exchanged" width=""/>
                 <h2>Exchange</h2>
                 <p>Trade your recyclables instead of trashing them! Swap plastics for metal scraps, cardboard for electronic components, and connect with a community that turns waste into valuable resources. Join our platform and be part of the circular economy in just minutes!</p>
             </div>

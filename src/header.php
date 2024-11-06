@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Header</title>
     <style>
       header {
         font-family: Arial, sans-serif;
         position: fixed;
-        top: 0;
-        left: 0;
-        margin-bottom: 10px;
+        /* top: 0;
+        left: 0; */
+        /* margin-bottom: 10px; */
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        background-color: #f8f9fa;
+        background-color: #01b198;
         height: 60px;
         width: 100vw; /* 100% of the viewport width */
         padding: 10px 0; /* Padding at the top and bottom only */
@@ -23,16 +24,15 @@
         z-index: 1000;
         transition: top 0.3s, padding 0.3s;
       }
-      .left-header {
+      .left-header, .right-header {
         padding-left: 40px;
         display: flex;
         gap: 10px;
         cursor: pointer;
+        flex-shrink: 0;
       }
-      .right-header {
-        padding-right: 40px;
-        display: flex;
-        gap: 10px;
+      .right-header{
+        white-space: nowrap;
       }
       .right-header button {
         padding: 5px 10px;
@@ -43,29 +43,9 @@
         border-radius: 5px;
         cursor: pointer;
       }
-      nav {
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-      }
-      nav ul {
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        flex-grow: 1;
-      }
-      nav ul li {
-        margin: 0 15px;
-        display: inline;
-      }
-      nav a {
-        text-decoration: none;
-        color: #000;
-        font-size: 16px;
-      }
       .logo {
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row;*/
         gap: 5px;
         align-items: center;
       }
@@ -73,6 +53,11 @@
       .menu-icon {
         cursor: pointer;
         margin-right: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .menu-icon:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
 
       .side-menu {
@@ -128,6 +113,20 @@
       .menu-items a:hover {
         color: #007bff;
       }
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      header{
+        flex-wrap: nowrap;
+      }
+      .left-header, .right-header {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 5px;
+      }
+      .site-name {
+        display: none;
+      }
+    }
     </style>
   </head>
   <body>
@@ -137,33 +136,33 @@
           <img src="images/menu-icon.svg" width="25" alt="Menu Icon" />
         </div>
         <div class="logo" onclick="goToIndex()">
-          <img src="images/recycling-icon.svg" width="25" />
-          <div class="site-name">RecycleBulungi</div>
+          <img src="images/recycling-icon.svg" width="30" />
+          <div class="site-name"><b>RecycleBulungi</b></div>
         </div>
       </div>
 
       <div class="right-header">
-        <a href="SignUp.htm"><button>Sign Up</button></a>
-        <a href="SignIn.htm"><button>Sign In</button></a>
+        <a href="SignUp.php"><button>Sign Up</button></a>
+        <a href="SignIn.php"><button>Sign In</button></a>
       </div>
     </header>
 
     <div class="side-menu" id="sideMenu">
       <div class="profile">
         <img
-          src="images/user-icon.png"
+          src="images/user-icon.svg"
           alt="User Profile"
           class="profile-icon"
         />
         <p class="username">Username</p>
       </div>
       <ul class="menu-items">
-        <li><a href="Profile.htm">Profile</a></li>
-        <li><a href="dashboard.htm">Dashboard</a></li>
-        <li><a href="services.htm">Services</a></li>
-        <li><a href="edu.htm">Education</a></li>
-        <li><a href="about.htm">About Us</a></li>
-        <li><a href="logout.htm">Logout</a></li>
+        <li><a href="Profile.php">Profile</a></li>
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <li><a href="services.php">Services</a></li>
+        <li><a href="edu.php">Education</a></li>
+        <li><a href="about.php">About Us</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
     <script>
@@ -182,7 +181,7 @@
         }
       });
       function goToIndex() {
-        window.location.href = "index.htm";
+        window.location.href = "index.php";
       }
     </script>
     <script src="generalScript.js"></script>

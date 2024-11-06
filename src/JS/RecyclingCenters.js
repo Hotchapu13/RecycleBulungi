@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const map = L.map("map").setView([1.3733, 32.2903], 7); // Default center: Kampala, Uganda
 
   // Add OpenStreetMap tiles
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.svg", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
     maxZoom: 19,

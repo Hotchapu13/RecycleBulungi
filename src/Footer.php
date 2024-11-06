@@ -67,6 +67,27 @@
           text-align: center;
         }
       }
+            /* Responsive styles */
+            @media (max-width: 768px) {
+        header,
+        footer {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        header .left-header,
+        footer .footer-left,
+        header .right-header,
+        footer .footer-right {
+          width: 100%;
+          padding: 10px 0;
+        }
+
+        header .logo,
+        footer .social-icons {
+          justify-content: center;
+        }
+      }
     </style>
   </head>
   <body>
