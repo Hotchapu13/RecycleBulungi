@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <style>
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f8f9fa;
+        height: 60px;
+        width: 100vw; /* 100% of the viewport width */
+        padding: 10px 0; /* Padding at the top and bottom only */
+        overflow: auto;
+        z-index: 1000;
+        transition: top 0.3s, padding 0.3s;
+      }
+      .left-header {
+        padding-left: 40px;
+        display: flex;
+        gap: 10px;
+      }
+      .right-header {
+        padding-right: 40px;
+        display: flex;
+        gap: 10px;
+      }
+      .right-header button {
+        padding: 5px 10px;
+        font-size: 14px;
+        color: #f4f4f4;
+        background-color: #0d7ded;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        flex-grow: 1;
+      }
+      nav ul li {
+        margin: 0 15px;
+        display: inline;
+      }
+      nav a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left-header">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <img src="images/menu-icon.svg" width="25" alt="Menu Icon" />
+        </div>
+        <div class="logo">
+          <img src="images/recycling-icon.svg" width="25" />
+        </div>
+        <div class="site-name">RecycleBulungi</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="about.htm" target="_self">About</a></li>
+          <li><a href="services.htm" target="_self">Services</a></li>
+          <li><a href="contact.htm" target="_self">Contact</a></li>
+          <li><a href="edu.htm" target="_self">Education</a></li>
+        </ul>
+      </nav>
+      <div class="right-header">
+        <a href="SignUp.htm"><button>Sign Up</button></a>
+        <a href="SignIn.htm"><button>Sign In</button></a>
+      </div>
+    </header>
+  </body>
+</html>
