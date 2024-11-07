@@ -16,7 +16,7 @@
       </div>
       <div class="form-container">
         <h2>Sign In</h2>
-        <form id="sign_in" action="/signin" method="POST">
+        <form id="sign_in" action="authenticate.php" method="POST">
           <input
             type="text"
             id="username"
