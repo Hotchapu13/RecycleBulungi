@@ -9,7 +9,7 @@
         position: relative;
         bottom: 0;
         margin-top: 50px;
-        background: #21b5a8;
+        background: #54595f;
         text-align: center;
         align-items: center;
         display: flex;
@@ -65,6 +65,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        text-align: center;
       }
       }
     </style>

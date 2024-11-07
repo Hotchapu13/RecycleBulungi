@@ -7,6 +7,44 @@
     <link rel="stylesheet" type="text/css" href="CSS/form_styles.css" />
     <script src="JS/generalScript.js"></script>
     <title>Sign Up-RecycleBulungi</title>
+    <style>
+    .popup {
+      visibility: hidden;
+      min-width: 250px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      border-radius: 2px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1;
+      left: 50%;
+      bottom: 30px;
+      font-size: 17px;
+      transform: translateX(-50%);
+    }
+    .popup.show {
+      visibility: visible;
+      -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+    @-webkit-keyframes fadein {
+      from {bottom: 0; opacity: 0;} 
+      to {bottom: 30px; opacity: 1;}
+    }
+    @keyframes fadein {
+      from {bottom: 0; opacity: 0;}
+      to {bottom: 30px; opacity: 1;}
+    }
+    @-webkit-keyframes fadeout {
+      from {bottom: 30px; opacity: 1;} 
+      to {bottom: 0; opacity: 0;}
+    }
+    @keyframes fadeout {
+      from {bottom: 30px; opacity: 1;}
+      to {bottom: 0; opacity: 0;}
+    }
+  </style>
   </head>
   <body>
   <?php include "header.php"; ?>
@@ -16,7 +54,7 @@
       </div>
       <div class="form-container">
         <h2>Create an Account</h2>
-        <form id="sign_up" action="/signup" method="POST">
+        <form id="sign_up" action="register.php" method="POST">
           <input
             type="text"
             id="firstname"
@@ -32,6 +70,14 @@
             placeholder="Last Name"
             required
           />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="UserName"
+            required
+          />
+          
           <input
             type="tel"
             id="phone"
@@ -65,5 +111,20 @@
       </div>
     </div>
     <?php include "footer.php"; ?>
+
+    <div id="popup" class="popup">Account created successfully!</div>
+    
+  <script>
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('success')) {
+        const popup = document.getElementById('popup');
+        popup.classList.add('show');
+        setTimeout(function() {
+          popup.classList.remove('show');
+        }, 3000);
+      }
+    };
+  </script>
   </body>
 </html>
