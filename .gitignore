@@ -1,6 +1,5 @@
 wireframes/
 src/learning.htm
-
-php src/
+.gitignore
 .vscode/
-src/citations/
+src/citations
