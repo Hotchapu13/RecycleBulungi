@@ -39,7 +39,7 @@
         <!--make sure to redirect to email to account-->
         <div class="new_acc">Don't have an account? <a href="SignUp.php">sign up</a></div>
         <div class="forgot_password">
-           <a href="SignUp.php">Forgot password</a>
+           <a href="forgot_password.php">Forgot password</a>
         </div>
       </div>
     </div>

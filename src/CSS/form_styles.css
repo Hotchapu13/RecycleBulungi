@@ -48,11 +48,9 @@ input[type="submit"]:hover {
   color: #01b198;
   margin-bottom: 25px;
 }
-.new_acc{
-  padding: 5px, 0px, 5px, 0px;
-  text-decoration: none;
+.new_acc {
+  margin-top: 16px;
 }
 .forgot_password {
-  padding-top: 3px;
+  margin-top: 16px;
 }
-s
