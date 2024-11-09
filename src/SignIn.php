@@ -10,9 +10,11 @@
   </head>
   <body>
   <?php include "header.php"; ?>
+
     <div class="wrapper">
-      <div class="content">
-        <h2></h2>
+    <div class="content">
+        <h1>Waste and Recycling solutions that fit your business needs</h1>
+        <br>
       </div>
       <div class="form-container">
         <h2>Sign In</h2>
@@ -37,7 +39,7 @@
         <!--make sure to redirect to email to account-->
         <div class="new_acc">Don't have an account? <a href="SignUp.php">sign up</a></div>
         <div class="forgot_password">
-          Forgot password? <a href="SignUp.php">click here</a>
+           <a href="SignUp.php">Forgot password</a>
         </div>
       </div>
     </div>

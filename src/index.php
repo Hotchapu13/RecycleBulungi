@@ -14,7 +14,6 @@ session_start();
       content="A recycling and waste management web application"
     />
     <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
     <link rel="stylesheet" type="text/css" href="CSS/index_styles.css" />
     <script src="JS/generalScript.js" defer></script>
     <title>RecycleBulungi</title>

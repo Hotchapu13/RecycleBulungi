@@ -50,9 +50,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
       }
       .card:hover{
         cursor: pointer;
-    transform: scale(1.05); /* Slightly enlarge the div */
-    background-color: #d4f1c5; /* Brighter shade of green */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        transform: scale(1.05); /* Slightly enlarge the div */
+        background-color: #d4f1c5; /* Brighter shade of green */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
       }
       .container h1{
         color: #01b198;

@@ -50,7 +50,8 @@
   <?php include "header.php"; ?>
     <div class="wrapper">
       <div class="content">
-        <h2>Waste and Recycling solutions that fit your business needs</h2>
+        <h1>Waste and Recycling solutions that fit your business needs</h1>
+        <br>
       </div>
       <div class="form-container">
         <h2>Create an Account</h2>
@@ -113,7 +114,7 @@
     <?php include "footer.php"; ?>
 
     <div id="popup" class="popup">Account created successfully!</div>
-    
+
   <script>
     window.onload = function() {
       const urlParams = new URLSearchParams(window.location.search);
