@@ -22,7 +22,7 @@ if (session_status() === PHP_SESSION_NONE) {
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        background-color: #01b198;
+        /* background-color: #01b198; */
         height: 60px;
         width: 100vw; /* 100% of the viewport width */
         padding: 10px 0; /* Padding at the top and bottom only */
@@ -44,10 +44,16 @@ if (session_status() === PHP_SESSION_NONE) {
         padding: 5px 10px;
         font-size: 14px;
         color: #f4f4f4;
-        background-color: #0d7ded;
+        background-color: #01b198;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      .right-header button:hover{
+        cursor: pointer;
+        transform: scale(1.05); /* Slightly enlarge the div */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       }
       .logo {
         display: flex;

@@ -20,7 +20,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
 
     <div class="wrapper">
       <div class="education-page">
-        <h2>Recycling Education</h2>
+        <h1>Recycling Education</h1>
         <p>
           Learn how to recycle efficiently and understand what materials can be
           recycled.
@@ -31,7 +31,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
           <h3>Latest Articles</h3>
           <div class="article">
             <h4>
-              <a href="https://www.example.com/article1" target="_blank"
+              <a href="https://recyclingpartnership.org/best-practices-for-community-recycling-programs/" target="_blank"
                 >Recycling Plastics: Best Practices</a
               >
             </h4>
@@ -42,7 +42,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
           </div>
           <div class="article">
             <h4>
-              <a href="https://www.example.com/article2" target="_blank"
+              <a href="https://www.rubicon.com/blog/paper-recycling-process/" target="_blank"
                 >The Importance of Paper Recycling</a
               >
             </h4>
@@ -53,7 +53,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
           </div>
           <div class="article">
             <h4>
-              <a href="https://www.example.com/article3" target="_blank"
+              <a href="https://www.nationalgeographic.com/science/article/paid-content-innovations-in-recycling#:~:text=Scientists%20are%20looking%20for%20new,on%20polypropylene%20is%20especially%20notable." target="_blank"
                 >Innovations in Recycling Technology</a
               >
             </h4>
@@ -73,8 +73,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/VIDEO_ID1"
-                title="YouTube video player"
+                src="https://www.youtube.com/embed/NYux4-KIY1o"
+                title="How Recycling Works"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -88,8 +88,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/VIDEO_ID2"
-                title="YouTube video player"
+                src="https://www.youtube.com/embed/hE4NL6a3tK0"
+                title="The impact of recycling on the environment"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -103,8 +103,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/VIDEO_ID3"
-                title="YouTube video player"
+                src="https://www.youtube.com/embed/BnwdpR_2idA"
+                title="Tips for effective recycling at home"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen

@@ -25,8 +25,9 @@ body {
 }
 .education-page {
   padding: 20px;
+  align-items: center;
 }
-.education-page h2 {
+.education-page h1 {
   color: #01b198;
   font-size: 28px;
   text-align: center;
@@ -124,7 +125,7 @@ body {
 }
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-  .education-page h2 {
+  .education-page h1 {
     font-size: 24px;
   }
 
@@ -143,8 +144,8 @@ body {
 }
 
 @media (max-width: 480px) {
-  .education-page h2 {
-    font-size: 20px;
+  .education-page h1 {
+    font-size: 22px;
   }
 
   .education-page p {

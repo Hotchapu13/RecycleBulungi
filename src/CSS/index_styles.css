@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .container,
 .container_2 {
   display: flex;
@@ -41,32 +42,44 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 /* Responsive styles */
 @media (max-width: 768px) {
+  .wrapper {
+    padding-top: 60px;
+  }
   .container,
   .container_2 {
     flex-direction: column;
     margin-top: 20px;
+    padding: 0 10px;
   }
 
   .content_1,
   .content_2 {
-    width: 90%;
-    padding: 20px;
+    width: 100%;
+    padding: 15px;
   }
 
   .image-placeholder {
     padding-left: 0;
     margin-top: 20px;
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
+  .wrapper {
+    margin-top: 60px;
+  }
   .content_1,
   .content_2 {
     font-size: 16px;
     padding: 15px;
+  }
+  .container,
+  .container_2 {
+    padding: 0 10px;
   }
 }

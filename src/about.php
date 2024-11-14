@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+   
     <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css" />
     <script src="JS/generalScript.js"></script>
     <title>About Us - RecycleBulungi</title>
@@ -63,7 +63,7 @@
           individuals, businesses, and organizations to dispose of waste
           responsibly and locate recycling centers.
         </p>
-
+        <br>
         <h2>Our Mission</h2>
         <p>
           Our mission is to empower communities to take control of their waste
@@ -72,7 +72,7 @@
           management, we aim to make recycling accessible and convenient for
           all, ensuring a cleaner and safer environment for future generations.
         </p>
-
+        <br>
         <h2>Why We Exist</h2>
         <p>
           RecycleBulungi was founded to tackle the growing problem of waste
@@ -107,7 +107,7 @@
             recycling guidelines, and community recycling events.
           </li>
         </ul>
-
+        <br>
         <h2>Our Vision</h2>
         <p>
           We envision a future where communities across Uganda and beyond
@@ -115,7 +115,7 @@
           culture of recycling and environmental awareness, we can reduce waste,
           create jobs, and make a positive impact on our environment.
         </p>
-
+        <br>
         <h2>What We Offer</h2>
         <ul>
           <li>
@@ -138,7 +138,7 @@
             reports.
           </li>
         </ul>
-
+        <br>
         <h2>Join Us in Making a Difference</h2>
         <p>
           Every small action counts. By using RecycleBulungi for your waste
