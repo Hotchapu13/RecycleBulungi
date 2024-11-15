@@ -15,5 +15,5 @@ if ($conn->connect_error) {
 $conn->set_charset("utf8");
 
 // Session timeout duration in seconds
-define('SESSION_TIMEOUT', 600)
+define('SESSION_TIMEOUT', 300)
 ?>
