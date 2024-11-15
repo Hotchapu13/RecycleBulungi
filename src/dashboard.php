@@ -1,10 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
-    header('Location: SignIn.php');
-    exit();
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

@@ -1,7 +1,4 @@
-<?php
-// We need to use sessions, so you should always start sessions using the below code.
-session_start();
-?>
+
 <!--This is the landing page-->
 <!DOCTYPE html>
 <html lang="en">

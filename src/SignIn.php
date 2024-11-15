@@ -1,3 +1,10 @@
+<?php
+// SignIn.php
+
+// Check if the session expired parameter is set
+$session_expired = isset($_GET['session_expired']) ? true : false;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,6 +25,9 @@
       </div>
       <div class="form-container">
         <h2>Sign In</h2>
+        <?php if ($session_expired): ?>
+          <p class="error">Your session has expired. Please sign in again.</p>
+        <?php endif; ?>
         <form id="sign_in" action="authenticate.php" method="POST">
           <input
             type="text"
