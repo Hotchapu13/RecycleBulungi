@@ -65,13 +65,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->isSMTP();                                            // Set mailer to use SMTP
             $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'nyeroryan@gmail.com';                 // SMTP username
-            $mail->Password   = 'StephCurry#30';                  // SMTP password or App Password
+            $mail->Username   = 'RecycleBulungi@gmail.com';                 // SMTP username
+            $mail->Password   = 'hvha ofvy lxlg objb';                  // SMTP password or App Password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port       = 587;                                    // TCP port to connect to
 
             // Recipients
-            $mail->setFrom('nyeroryan@gmail.com', 'RecycleBulungi'); // Replace with your sender info
+            $mail->setFrom('RecycleBulungi@gmail.com', 'RecycleBulungi'); // Replace with your sender info
             $mail->addAddress($email);                                   // Add a recipient
 
             // Content

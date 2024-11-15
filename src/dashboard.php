@@ -84,7 +84,8 @@
     </style>
   </head>
   <body>
-    <?php include "header.php"; ?>
+        <?php include "header.php"; ?>
+    <?php include "session_noti.php"; ?>
 
     <!-- Main Content Area -->
     <div class="container">

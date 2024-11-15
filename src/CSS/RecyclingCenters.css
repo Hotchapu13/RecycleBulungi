@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
-  overflow-x:hidden;
+  overflow-x: hidden;
   background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,10 @@ body {
 
 .wrapper {
   padding: 20px;
+}
+
+.leaflet-control {
+  z-index: 500; /* Ensure this is lower than the header's z-index */
 }
 
 /* Page Title */

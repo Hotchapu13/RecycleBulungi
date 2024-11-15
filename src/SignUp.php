@@ -47,7 +47,8 @@
   </style>
   </head>
   <body>
-  <?php include "header.php"; ?>
+      <?php include "header.php"; ?>
+    <?php include "session_noti.php"; ?>
     <div class="wrapper">
       <div class="content">
         <h1>Waste and Recycling solutions that fit your business needs</h1>

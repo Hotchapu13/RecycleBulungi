@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="CSS/form_styles.css">
 </head>
 <body>
-  <?php include "header.php"; ?>
+      <?php include "header.php"; ?>
+    <?php include "session_noti.php"; ?>
   <div class="wrapper">
   <div class="form-container">
     <h2>Reset Your Password</h2>
