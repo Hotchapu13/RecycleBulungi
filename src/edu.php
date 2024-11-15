@@ -1,10 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
-    header('Location: SignIn.php');
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +9,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
     <title>Education-RecycleBulungi</title>
   </head>
   <body>
-    <?php include "header.php"; ?>
+        <?php include "header.php"; ?>
+    <?php include "session_noti.php"; ?>
 
     <div class="wrapper">
       <div class="education-page">

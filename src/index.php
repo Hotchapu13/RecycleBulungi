@@ -17,7 +17,9 @@
   </head>
   <body>
     <!--Adding the header-->
-    <?php include "header.php"; ?>
+        <?php include "header.php"; ?>
+    <?php include "session_noti.php"; ?>
+    <?php include "session_noti.php"; ?>
     
     <!--Page content-->
     <div class="wrapper">

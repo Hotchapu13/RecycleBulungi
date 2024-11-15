@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="CSS/form_styles.css">
 </head>
 <body>
-  <?php include "header.php"; ?>
+      <?php include "header.php"; ?>
+    <?php include "session_noti.php"; ?>
 
   <div class="verify-code-container">
     <h2>Enter Verification Code</h2>

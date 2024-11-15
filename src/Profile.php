@@ -100,7 +100,8 @@
   </style>
 </head>
 <body>
-  <?php include "header.php"; ?> 
+      <?php include "header.php"; ?>
+    <?php include "session_noti.php"; ?> 
 
   <div class="container">
     <div class="profile-card">

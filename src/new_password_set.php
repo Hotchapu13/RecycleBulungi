@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="CSS/index_styles.css">
 </head>
 <body>
-  <?php include "header.php"; ?>
+      <?php include "header.php"; ?>
+    <?php include "session_noti.php"; ?>
 
   <div class="set-password-container">
     <h2>Set a New Password</h2>

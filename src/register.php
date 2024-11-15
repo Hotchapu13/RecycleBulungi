@@ -1,4 +1,5 @@
 <?php
+// Page for registering new users of the website
 // Connection information
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'root';
