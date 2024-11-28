@@ -259,6 +259,39 @@ include 'session.php';
         }
       });
     });
+
+    // JavaScript to handle the notification card
+    document.addEventListener("DOMContentLoaded", function() {
+      const notification = document.getElementById("sessionExpiredNotification");
+      if (notification) {
+        notification.style.display = "block";
+        setTimeout(() => {
+          notification.style.opacity = 1;
+        }, 100); // Start fade-in after a short delay
+
+        // Add event listener to hide the notification on click
+        document.addEventListener("click", function() {
+          notification.style.opacity = 0;
+          setTimeout(() => {
+            notification.style.display = "none";
+          }, 500); // Ensure display is set to none after fade-out
+        });
+      }
+
+      // Poll the server for session status
+      setInterval(() => {
+        fetch('check_session.php')
+          .then(response => response.json())
+          .then(data => {
+            if (data.session_expired) {
+              notification.style.display = "block";
+              setTimeout(() => {
+                notification.style.opacity = 1;
+              }, 100); // Start fade-in after a short delay
+            }
+          });
+      }, 5000); // Check every 5 seconds
+    });
     </script>
     <script src="generalScript.js"></script>
   </body>

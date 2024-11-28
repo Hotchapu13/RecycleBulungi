@@ -1,0 +1,37 @@
+User-agent: *
+Disallow: /src/
+Disallow: /wireframes/
+Disallow: /recyclebulungi.sql
+Disallow: /Readme.txt
+
+# Allow specific files in the src directory
+Allow: /src/index.php
+Allow: /src/about.php
+Allow: /src/edu.php
+Allow: /src/marketplace.php
+Allow: /src/RecyclingCenters.php
+
+# Disallow specific files in the src directory
+Disallow: /src/authenticate.php
+Disallow: /src/check_session.php
+Disallow: /src/config.php
+Disallow: /src/email_config.php
+Disallow: /src/forgot_password_handler.php
+Disallow: /src/forgot_password.php
+Disallow: /src/new_password_set.php
+Disallow: /src/register.php
+Disallow: /src/reset_password.php
+Disallow: /src/session_mgt.php
+Disallow: /src/session_noti.php
+Disallow: /src/session.php
+Disallow: /src/logout.php
+
+# Allow CSS and JS directories
+Allow: /src/CSS/
+Allow: /src/JS/
+
+# Disallow images directory
+Disallow: /src/images/
+
+# Disallow PHPMailer directory
+Disallow: /src/PHPMailer/

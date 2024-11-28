@@ -19,16 +19,19 @@ function checkSessionTimeout() {
             // Session has expired
             session_unset();
             session_destroy();
+            $_SESSION['session_expired'] = true;
             if (in_array($current_page, $public_pages)) {
                 header('Location: index.php?session_expired=1');
             } else {
                 header('Location: SignIn.php?session_expired=1');
             }
             exit();
+            return true;
         }
     }
     // Update last activity time
     $_SESSION['last_activity'] = time();
+    return false;
 }
 
 // Call the function to check session timeout
